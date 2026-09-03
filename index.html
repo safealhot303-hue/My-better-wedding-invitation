@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#073c2d">
+<title>دعوة خطوبة | خالد & ندى</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="music-toggle" id="musicToggle" aria-label="تشغيل أو إيقاف الموسيقى">♪</button>
+<audio id="bgMusic" loop preload="none"></audio>
+
+<section class="hero">
+  <div class="hero-art"></div>
+  <div class="hero-content">
+    <div class="tiny">مَعًا نَحْتَفِلُ بِبِدَايَةِ حِكَايَتِنَا</div>
+    <div class="english-kicker">Join us</div>
+    <div class="english-sub">to celebrate<br>our engagement</div>
+    <div class="names">خالد <span>&amp;</span> ندى</div>
+    <div class="date">25 / 9 / 2026</div>
+    <div class="gold-divider">✦</div>
+    <p>يَسْعَدُنَا أَنْ نُشَارِكَهُمْ فَرْحَتَنَا وَنَحْتَفِلَ مَعَكُمْ بِهَذِهِ الْمُنَاسَبَةِ الْخَاصَّة</p>
+    <a class="gold-btn" href="#details">تَفَاصِيلُ الْمُنَاسَبَة</a>
+  </div>
+</section>
+
+<section class="countdown green-section">
+  <div class="section-heading gold">الْعَدُّ التَّنَازُلِيُّ لِحَفْلِنَا</div>
+  <div class="mini-ornament">♡</div>
+  <div class="count-grid">
+    <div class="count-card"><strong id="days">00</strong><span>يوم</span></div>
+    <div class="count-card"><strong id="hours">00</strong><span>ساعة</span></div>
+    <div class="count-card"><strong id="minutes">00</strong><span>دقيقة</span></div>
+    <div class="count-card"><strong id="seconds">00</strong><span>ثانية</span></div>
+  </div>
+</section>
+
+<section class="section" id="details">
+  <div class="section-heading">تفاصيل المناسبة</div>
+  <div class="gold-rule">◆</div>
+  <p class="lead">تَوَاجُدُكُمْ مَعَنَا يُكْمِلُ فَرْحَتَنَا</p>
+
+  <div class="details-grid">
+    <article class="detail-card">
+      <div class="icon">⌖</div>
+      <div class="label">المكان</div>
+      <h3>نادي اليخت ببورفؤاد</h3>
+      <p>بورفؤاد — بورسعيد</p>
+      <a class="dark-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=نادي+اليخت+بورفؤاد">عرض الموقع على الخريطة</a>
+    </article>
+    <article class="detail-card">
+      <div class="icon">▣</div>
+      <div class="label">التاريخ</div>
+      <h3>الجمعة 25 سبتمبر 2026</h3>
+      <p>يُرجى الحضور في الموعد المحدد</p>
+      <button class="dark-btn" id="calendarBtn">إضافة إلى التقويم</button>
+    </article>
+  </div>
+</section>
+
+<section class="section rsvp-section" id="rsvp">
+  <div class="rsvp-card">
+    <div class="section-heading gold">تأكيد الحضور</div>
+    <div class="gold-rule">♥</div>
+    <form id="rsvpForm">
+      <div class="field-row">
+        <div>
+          <label>الاسم الكامل</label>
+          <input required name="name" placeholder="اكتب اسمك">
+        </div>
+        <div>
+          <label>رقم الجوال</label>
+          <input required name="phone" type="tel" placeholder="05xxxxxxxx">
+        </div>
+      </div>
+
+      <label>هل ستتمكن من الحضور؟</label>
+      <div class="attendance">
+        <label class="choice"><input type="radio" name="attendance" value="yes" checked> سأحضر بإذن الله</label>
+        <label class="choice"><input type="radio" name="attendance" value="no"> أعتذر عن الحضور</label>
+      </div>
+
+      <label>عدد الحاضرين (بما فيهم أنت)</label>
+      <select name="guests">
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+      </select>
+
+      <button class="gold-btn submit" type="submit">إرسال التأكيد　➤</button>
+      <div class="form-note">بعد الإرسال سيتم فتح واتساب لإرسال بيانات التأكيد.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-ornament">◯◯</div>
+  <h2>خالد &amp; ندى</h2>
+  <p>نَتَطَلَّعُ لِرُؤْيَتِكُمْ</p>
+  <div class="contact">
+    <a href="https://wa.me/201000000000" target="_blank" rel="noopener">واتساب</a>
+    <a href="mailto:hello@example.com">hello@example.com</a>
+  </div>
+  <p class="thanks">حُضُورُكُمْ يُسْعِدُنَا وَيَكْتَمِلُ بِهِ الْفَرَح ♥</p>
+  <small>2026 © جميع الحقوق محفوظة</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
