@@ -1,0 +1,24 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#b9934b"><title>دعوة خطوبة خالد وندى</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<audio id="bgMusic" src="assets/engagement-music.mp3" preload="auto" loop playsinline></audio>
+<button id="musicBtn" class="music-btn" type="button">♫ <span>تشغيل الموسيقى</span></button>
+<section class="hero"><img class="hero-image" src="assets/hero.jpg" alt="دعوة خطوبة خالد وندى">
+<div class="hero-cta"><a href="#rsvp" class="primary-btn">تأكيد الحضور ♥</a></div></section>
+<section class="countdown-section"><h2>العد التنازلي لحفلنا</h2><div class="gold-line"></div>
+<div class="countdown"><div class="count-card"><strong id="days">00</strong><span>يوم</span></div><div class="count-card"><strong id="hours">00</strong><span>ساعة</span></div><div class="count-card"><strong id="minutes">00</strong><span>دقيقة</span></div><div class="count-card"><strong id="seconds">00</strong><span>ثانية</span></div></div></section>
+<section class="section details"><div class="heading"><h2>تفاصيل المناسبة</h2><div class="gold-line"></div></div>
+<div class="details-grid"><article class="detail-card"><div class="icon">⌖</div><h3>المكان</h3><p class="highlight">نادي اليخت ببورفؤاد</p><p>بورفؤاد — بورسعيد</p><a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&query=نادي+اليخت+بورفؤاد" target="_blank">عرض الموقع على الخريطة</a></article>
+<article class="detail-card"><div class="icon">▣</div><h3>التاريخ والموعد</h3><p class="highlight">الجمعة 25 سبتمبر 2026</p><p>الحضور من الساعة 8:00 مساءً</p><a class="secondary-btn" id="calendarBtn" href="#" target="_blank">إضافة إلى التقويم</a></article></div></section>
+<section class="section rsvp-wrap" id="rsvp"><div class="rsvp-card"><div class="heading light"><h2>تأكيد الحضور</h2><div class="gold-line"></div></div>
+<form id="rsvpForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+<input type="hidden" name="_subject" value="تأكيد حضور — خطوبة خالد وندى"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+<div class="form-grid"><label>الاسم الكامل<input name="الاسم" required placeholder="اكتب اسمك"></label><label>رقم الجوال<input name="رقم الجوال" type="tel" required placeholder="رقم الجوال"></label>
+<label class="full">هل ستتمكن من الحضور؟<select name="الحضور" required><option value="">اختر</option><option>سأحضر بإذن الله</option><option>أعتذر عن الحضور</option></select></label>
+<label class="full">عدد الحضور (بما فيهم أنت)<select name="عدد الحضور" required><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label></div>
+<button class="primary-btn submit-btn" type="submit">إرسال التأكيد ♥</button><p id="formMessage"></p></form></div></section>
+<footer><h2>نتطلع لرؤيتكم</h2><div class="gold-line"></div><p>حضوركم يسعدنا ويكتمل به الفرح ♥</p><small>جميع الحقوق محفوظة © 2026</small></footer>
+<script src="script.js"></script></body></html>
