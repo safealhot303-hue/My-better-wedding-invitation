@@ -346,7 +346,7 @@ a{color:inherit}
 h2{
   margin:0;
   color:var(--gold-dark);
-  font-family:"Aref Ruqaa Ink",serif;
+  font-family:"Aref Ruqaa ",serif;
   font-size:clamp(30px,4vw,42px);
   font-weight:400;
   line-height:1.35;
@@ -403,9 +403,9 @@ h2{
   font-size:25px;
   box-shadow:0 10px 25px rgba(107,86,53,.16);
 }
-.detail-card h3{margin:0 0 14px;font:400 28px/1.4 "Aref Ruqaa Ink",serif;color:var(--dark)}
+.detail-card h3{margin:0 0 14px;font:400 28px/1.4 "Aref Ruqaa ",serif;color:var(--dark)}
 .detail-card p{margin:7px 0;color:#756b5a;font-size:14px}
-.detail-card .highlight{color:var(--gold);font:400 23px/1.5 "Aref Ruqaa Ink",serif}
+.detail-card .highlight{color:var(--gold);font:400 23px/1.5 "Aref Ruqaa ",serif}
 .detail-card .secondary-btn{margin-top:22px}
 
 .rsvp-wrap{background:linear-gradient(145deg,#f7f0e2,#fffdf8)}
