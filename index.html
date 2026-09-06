@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#b9934b">
+  <meta name="description" content="دعوة خطوبة خالد وندى">
+  <title>دعوة خطوبة خالد وندى</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Aref+Ruqaa+Ink:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-active">
+  <!-- Luxury envelope intro: removed from the document flow after opening/skipping. -->
+  <div id="envelopeIntro" class="envelope-intro" role="dialog" aria-modal="true" aria-label="مقدمة الدعوة">
+    <div class="intro-glow" aria-hidden="true"></div>
+    <div class="envelope-stage">
+      <div id="envelope" class="envelope" aria-hidden="true">
+        <div class="envelope-shadow"></div>
+        <div class="envelope-paper">
+          <div class="paper-inner"></div>
+        </div>
+        <div class="envelope-back"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-pocket"></div>
+        <div class="wax-seal"><span>♥</span></div>
+      </div>
+      <div class="intro-actions">
+        <button id="openInvitation" class="intro-open" type="button">افتح الدعوة</button>
+        <button id="skipIntro" class="intro-skip" type="button">تخطي المقدمة</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="siteContent" class="site-content" aria-hidden="true">
+    <audio id="bgMusic" src="assets/engagement-music.mp3" preload="none" loop playsinline></audio>
+    <button id="musicBtn" class="music-btn" type="button" aria-label="تشغيل الموسيقى">♫ <span>تشغيل الموسيقى</span></button>
+
+    <section class="hero" aria-label="دعوة خطوبة خالد وندى">
+      <div class="hero-image" role="img" aria-label="دعوة خطوبة خالد وندى"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-cta">
+        <a href="#rsvp" class="primary-btn">تأكيد الحضور ♥</a>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="section-inner">
+        <div class="heading reveal">
+          <h2>العد التنازلي لحفلنا</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="countdown" aria-label="العد التنازلي">
+          <div class="count-card reveal"><strong id="days">00</strong><span>يوم</span></div>
+          <div class="count-card reveal"><strong id="hours">00</strong><span>ساعة</span></div>
+          <div class="count-card reveal"><strong id="minutes">00</strong><span>دقيقة</span></div>
+          <div class="count-card reveal"><strong id="seconds">00</strong><span>ثانية</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details">
+      <div class="section-inner">
+        <div class="heading reveal">
+          <h2>تفاصيل المناسبة</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="details-grid">
+          <article class="detail-card reveal">
+            <div class="icon" aria-hidden="true">⌖</div>
+            <h3>المكان</h3>
+            <p class="highlight">نادي اليخت ببورفؤاد</p>
+            <p>بورفؤاد — بورسعيد</p>
+            <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&query=نادي+اليخت+بورفؤاد" target="_blank" rel="noopener noreferrer">عرض الموقع على الخريطة</a>
+          </article>
+          <article class="detail-card reveal">
+            <div class="icon" aria-hidden="true">▣</div>
+            <h3>التاريخ والموعد</h3>
+            <p class="highlight">الجمعة 25 سبتمبر 2026</p>
+            <p>الحضور من الساعة 8:00 مساءً</p>
+            <a class="secondary-btn" id="calendarBtn" href="#" target="_blank" rel="noopener noreferrer">إضافة إلى التقويم</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp-wrap" id="rsvp">
+      <div class="section-inner">
+        <div class="rsvp-card reveal">
+          <div class="heading light">
+            <h2>تأكيد الحضور</h2>
+            <div class="gold-line"></div>
+          </div>
+          <form id="rsvpForm" action="https://formsubmit.co/Safe.alhot303@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="تأكيد حضور — خطوبة خالد وندى">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-grid">
+              <label>الاسم الكامل<input name="الاسم" required placeholder="اكتب اسمك" autocomplete="name"></label>
+              <label>رقم الجوال<input name="رقم الجوال" type="tel" required placeholder="رقم الجوال" autocomplete="tel" inputmode="tel"></label>
+              <label class="full">هل ستتمكن من الحضور؟<select name="الحضور" required><option value="">اختر</option><option>سأحضر بإذن الله</option><option>أعتذر عن الحضور</option></select></label>
+              <label class="full">عدد الحضور (بما فيهم أنت)<select name="عدد الحضور" required><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+            </div>
+            <button class="primary-btn submit-btn" type="submit">إرسال التأكيد ♥</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="reveal">
+      <div class="section-inner">
+        <h2>نتطلع لرؤيتكم</h2>
+        <div class="gold-line"></div>
+        <p>حضوركم يسعدنا ويكتمل به الفرح ♥</p>
+        <small>جميع الحقوق محفوظة © 2026</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
